@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark text-white;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300;
+  }
+  
+  .btn-danger {
+    @apply bg-danger hover:bg-red-600 text-white font-bold py-2 px-4 rounded-lg transition-all duration-300;
+  }
+  
+  .chat-bubble-user {
+    @apply bg-primary rounded-2xl rounded-tr-sm p-3 max-w-[80%] self-end;
+  }
+  
+  .chat-bubble-ai {
+    @apply bg-gray-700 rounded-2xl rounded-tl-sm p-3 max-w-[80%] self-start;
+  }
+}
